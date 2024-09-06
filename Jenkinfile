@@ -1,7 +1,7 @@
 pipeline{
   agent any
   stages{
-   stage("main"){
+   stage("abhi"){
     when{
       branch "main"
     }
@@ -9,7 +9,7 @@ pipeline{
        echo "scm .........."
      }
    }
-   stage("main"){
+   stage("naveen"){
     when{
       branch "main"
     }
