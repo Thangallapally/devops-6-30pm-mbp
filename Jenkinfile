@@ -3,7 +3,7 @@ pipeline{
   stages{
    stage("abhi"){
     when{
-      branch "main"
+      branch "prod"
     }
      steps{ 
        echo "scm .........."
@@ -11,7 +11,7 @@ pipeline{
    }
    stage("naveen"){
     when{
-      branch "develop"
+      branch "test"
     }
      steps{ 
        echo "build .........."
